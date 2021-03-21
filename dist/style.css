@@ -1,0 +1,159 @@
+html{
+    background: url(../dist/images/pizza-background.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+body{
+    margin: 0;
+}
+
+#content{
+
+}
+
+.homePage{
+    background-color: #5c5b5b78;
+}
+
+.headTitle{
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    font-family: 'Indie Flower', cursive;
+}
+
+.headTitle h4{
+    margin: 0;
+    cursor: context-menu;
+}
+
+.buttonBar{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#button{
+    padding:0.5em 3em;
+    border:0.16em solid #FFFFFF;
+    background: none;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:400;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.15s;
+}
+
+#button:hover{
+    color: #DDDDDD;
+    border-color: #DDDDDD;
+    cursor: pointer;
+}
+
+#button:active{
+    color: #BBBBBB;
+    border-color: #BBBBBB;
+}
+
+.greetingText{
+    text-align: center;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    font-size: 4vh;
+    margin-bottom: 0;
+}
+
+.homeScreen{
+    display: flex;
+    justify-content: space-evenly;
+    width: 85%;
+    margin: 5% auto;
+    background-color: rgba(92, 91, 91, 0.47);
+    font-family: 'Indie Flower', cursive;
+    font-size: 3vh;
+}
+
+.homeCard1{
+    width: 40%;
+    border-right: 1px solid #b3adad;
+}
+
+.homeCard2{
+    width: 40%;
+    border-right: 1px solid #b3adad;
+}
+
+.homeCard3{
+    width: 40%;
+}
+
+.pizzaImg{
+    height: 75%;
+    width: 100%;
+}
+
+.deliveryImg{
+    height: 75%;
+    width: 100%;
+}
+
+.enjoyImg{
+    height: 75%;
+    width: 100%;
+}
+
+.homeText1{
+    margin-top: -3%;
+    text-align: center;
+    color: white;
+    padding: 0 7%;
+}
+
+.homeText2{
+    margin-top: -3%;
+    text-align: center;
+    color:white;
+    padding: 0 5%;
+}
+
+.homeText3{
+    margin-top: -3%;
+    text-align: center;
+    color:white;
+    padding: 0 6%;
+}
+
+@media only screen and (max-width: 1024px) {
+     .buttonBar{
+         flex-wrap: wrap;
+     }
+
+     #button{
+         padding: 0.5em 1em;
+     }
+
+     .greetingDiv{
+        padding: 0 5%;
+     }
+
+     .homeScreen{
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .homeCard1{
+        border: none;
+        width: 70%;
+     }
+
+     .homeCard2{
+        border: none;
+        width: 70%;
+     }
+
+     .homeCard3{
+        width: 70%;
+     }
+}
