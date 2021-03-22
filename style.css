@@ -69,17 +69,13 @@ body{
     display: flex;
     justify-content: space-evenly;
     width: 85%;
-    margin: 5% auto;
+    margin: 2% auto;
     background-color: rgba(92, 91, 91, 0.47);
     font-family: 'Indie Flower', cursive;
     font-size: 3vh;
 }
 
-.homeCard1{
-    width: 40%;
-    border-right: 1px solid #b3adad;
-}
-
+.homeCard1,
 .homeCard2{
     width: 40%;
     border-right: 1px solid #b3adad;
@@ -89,40 +85,40 @@ body{
     width: 40%;
 }
 
-.pizzaImg{
-    height: 75%;
-    width: 100%;
-}
-
-.deliveryImg{
-    height: 75%;
-    width: 100%;
-}
-
+.pizzaImg,
+.deliveryImg,
 .enjoyImg{
     height: 75%;
     width: 100%;
 }
 
-.homeText1{
-    margin-top: -3%;
-    text-align: center;
-    color: white;
-    padding: 0 7%;
-}
-
-.homeText2{
-    margin-top: -3%;
-    text-align: center;
-    color:white;
-    padding: 0 5%;
-}
-
+.homeText1,
+.homeText2,
 .homeText3{
     margin-top: -3%;
     text-align: center;
+    color: white;
+    padding: 0 5%;
+}
+
+#footer{
+    text-align: center;
     color:white;
-    padding: 0 6%;
+    font-family: 'Indie Flower', cursive;
+    font-size: 3vh;
+    background-color: #5c5b5b78;
+}
+
+#footer a{
+    color: white;
+}
+
+#footer a:hover{
+    color: #c4c4c4;
+}
+
+.footerText{
+    margin-bottom: 0;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -143,17 +139,10 @@ body{
          align-items: center;
      }
 
-     .homeCard1{
-        border: none;
-        width: 70%;
-     }
-
-     .homeCard2{
-        border: none;
-        width: 70%;
-     }
-
+     .homeCard1,
+     .homeCard2,
      .homeCard3{
+        border: none;
         width: 70%;
      }
 }
