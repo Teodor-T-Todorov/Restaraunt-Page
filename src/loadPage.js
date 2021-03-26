@@ -1,19 +1,19 @@
-import homeLoad from './home'
+import {loadHome} from './home'
 
 const content = document.querySelector('#content');
 const footer = document.querySelector('#footer');
 
-const homePage = document.createElement('div');
-homePage.setAttribute('class', 'homePage');
+const topBar = document.createElement('div');
+topBar.setAttribute('class', 'topBar');
 
 /*Head title and text*/
-const headTitle = document.createElement('div');
-headTitle.setAttribute('class', 'headTitle');
+const title = document.createElement('div');
+title.setAttribute('class', 'title');
 
-const headText = document.createElement('h4');
-headText.textContent = 'Pizza House'
+const titleText = document.createElement('h4');
+titleText.textContent = 'Pizza House'
 
-headTitle.appendChild(headText);
+title.appendChild(titleText);
 
 const buttonBar = document.createElement('div');
 buttonBar.setAttribute('class', 'buttonBar');
@@ -23,17 +23,19 @@ const home = document.createElement('div');
 home.setAttribute('class', 'home');
 
 const homeButton = document.createElement('button');
-homeButton.setAttribute('id', 'button');
+homeButton.setAttribute('class', 'button');
+homeButton.setAttribute('id', 'btnHome');
 homeButton.textContent = 'Home';
 
 home.appendChild(homeButton);
 
 /*Menu*/
 const menu = document.createElement('div');
-menu.setAttribute('class', 'home');
+menu.setAttribute('class', 'menu');
 
 const menuButton = document.createElement('button');
-menuButton.setAttribute('id', 'button');
+menuButton.setAttribute('class', 'button');
+menuButton.setAttribute('id', 'btnMenu');
 menuButton.textContent = 'Menu';
 
 menu.appendChild(menuButton);
@@ -43,28 +45,18 @@ const about = document.createElement('div');
 about.setAttribute('class', 'about');
 
 const aboutButton = document.createElement('button');
-aboutButton.setAttribute('id', 'button');
+aboutButton.setAttribute('class', 'button');
+aboutButton.setAttribute('id', 'btnAbout');
 aboutButton.textContent = 'About';
 
 about.appendChild(aboutButton);
-
-/*Contacts*/
-const contacts = document.createElement('div');
-contacts.setAttribute('class', 'conctacts');
-
-const contactsButton = document.createElement('button');
-contactsButton.setAttribute('id', 'button');
-contactsButton.textContent = 'Contacts';
-
-contacts.appendChild(contactsButton);
 
 /*Append buttons and head title to the home page*/
 buttonBar.appendChild(home);
 buttonBar.appendChild(menu);
 buttonBar.appendChild(about);
-buttonBar.appendChild(contacts);
-homePage.appendChild(headTitle);
-homePage.appendChild(buttonBar);
+topBar.appendChild(title);
+topBar.appendChild(buttonBar);
 
 /*Footer*/
 const footerText = document.createElement('p');
@@ -83,10 +75,10 @@ githubIcon.classList.add("fa-github");
 githubLink.appendChild(githubIcon);
 
 const loadPage = () =>{
-    content.appendChild(homePage);
+    content.appendChild(topBar);
     footer.appendChild(footerText);
     footer.appendChild(githubLink);
-    homeLoad();
+    loadHome();
 }
 
 export default loadPage;
