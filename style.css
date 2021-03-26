@@ -4,25 +4,25 @@ html{
 }
 
 body{
+    height: 100vh;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-#content{
-
-}
-
-.homePage{
+/*Top nav-bar*/
+.topBar{
     background-color: #5c5b5b78;
 }
 
-.headTitle{
+.title{
     text-align: center;
     color: white;
     font-size: 3em;
     font-family: 'Indie Flower', cursive;
 }
 
-.headTitle h4{
+.title h4{
     margin: 0;
     cursor: context-menu;
 }
@@ -33,7 +33,7 @@ body{
     justify-content: space-evenly;
 }
 
-#button{
+.button{
     padding:0.5em 3em;
     border:0.16em solid #FFFFFF;
     background: none;
@@ -46,13 +46,13 @@ body{
     transition: all 0.15s;
 }
 
-#button:hover{
+.button:hover{
     color: #DDDDDD;
     border-color: #DDDDDD;
     cursor: pointer;
 }
 
-#button:active{
+.button:active{
     color: #BBBBBB;
     border-color: #BBBBBB;
 }
@@ -65,6 +65,7 @@ body{
     margin-bottom: 0;
 }
 
+/*Home page*/
 .homeScreen{
     display: flex;
     justify-content: space-evenly;
@@ -101,7 +102,63 @@ body{
     padding: 0 5%;
 }
 
+/*Menu Page*/
+
+.menu{
+
+}
+
+.menuMsg{
+    text-align: center;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    font-size: 3vh;
+}
+
+.pizzas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 3%;
+    padding-top: 1%;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.5vh;
+    background-color: #5c5b5b78;
+}
+
+#pizza{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.pizzaName,
+.pizzaInfo{
+    margin: 1%;
+}
+
+.orderBar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btnOrder{
+    border:0.16em solid #FFFFFF;
+    background: none;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:400;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.15s;
+    cursor: pointer;
+}
+
+/*Footer*/
 #footer{
+    margin-top: auto;
     text-align: center;
     color:white;
     font-family: 'Indie Flower', cursive;
@@ -122,11 +179,7 @@ body{
 }
 
 @media only screen and (max-width: 1024px) {
-     .buttonBar{
-         flex-wrap: wrap;
-     }
-
-     #button{
+     .button{
          padding: 0.5em 1em;
      }
 
@@ -144,5 +197,9 @@ body{
      .homeCard3{
         border: none;
         width: 70%;
+     }
+
+     .pizzas{
+        grid-template-columns: none;
      }
 }
