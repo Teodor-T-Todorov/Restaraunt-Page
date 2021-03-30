@@ -211,4 +211,12 @@ body{
      .pizzas{
         grid-template-columns: none;
      }
+
+     .aboutPage{
+         flex-direction: column;
+     }
+
+     .aboutInfo{
+         width: 100%;
+     }
 }
