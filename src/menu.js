@@ -5,11 +5,6 @@ menuPage.setAttribute('class', 'menuPage');
 const loadMenu = () =>
 {
     menuPage.innerHTML = `
-
-    <div class="menuMsg">
-        <p>Our amazing menu!</p>
-    </div> 
-    
     <div class="pizzas">
         <div class="pizza1" id="pizza">
             <img src="../dist/images/p1.png" alt="pizza1" class="imgPizza">
@@ -107,9 +102,5 @@ const loadMenu = () =>
     content.appendChild(menuPage);
 }
 
-const removeMenu = () =>
-{
-    content.removeChild(menuPage);
-}
 
-export {loadMenu, removeMenu};
+export {loadMenu, menuPage};

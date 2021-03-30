@@ -1,7 +1,8 @@
 //import loadPage
 import loadPage from './loadPage';
-import {loadHome, removeHome} from './home';
-import {loadMenu, removeMenu} from './menu';
+import {loadHome, homePage} from './home';
+import {loadMenu, menuPage} from './menu';
+import {loadAbout, aboutPage} from './about'
 loadPage();
 
 const topBar = document.querySelector('.topBar');
@@ -12,7 +13,11 @@ topBar.addEventListener('click', function(e)
     {
         if(document.getElementsByClassName('menuPage'))
         {
-            removeMenu();
+            menuPage.remove();
+        }
+        if(document.getElementsByClassName('aboutPage'))
+        {
+            aboutPage.remove();
         }
         loadHome();
     }
@@ -21,13 +26,25 @@ topBar.addEventListener('click', function(e)
     {
         if(document.getElementsByClassName('homePage'))
         {
-            removeHome();
+            homePage.remove();
+        }
+        if(document.getElementsByClassName('aboutPage'))
+        {
+            aboutPage.remove();
         }
         loadMenu();
     }
 
     else if(e.target.id == 'btnAbout')
     {
-
+        if(document.getElementsByClassName('homePage'))
+        {
+            homePage.remove();
+        }
+        if(document.getElementsByClassName('menuPage'))
+        {
+            menuPage.remove();
+        }
+        loadAbout();
     }
 })

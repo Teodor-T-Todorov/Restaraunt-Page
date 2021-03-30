@@ -11,6 +11,7 @@ body{
 }
 
 /*Top nav-bar*/
+
 .topBar{
     background-color: #5c5b5b78;
 }
@@ -66,54 +67,45 @@ body{
 }
 
 /*Home page*/
+
 .homeScreen{
     display: flex;
     justify-content: space-evenly;
-    width: 85%;
+    width: 80%;
     margin: 2% auto;
     background-color: rgba(92, 91, 91, 0.47);
     font-family: 'Indie Flower', cursive;
-    font-size: 3vh;
+    font-size: 1.3em;
 }
 
 .homeCard1,
 .homeCard2{
-    width: 40%;
+    width: 35%;
     border-right: 1px solid #b3adad;
 }
 
 .homeCard3{
-    width: 40%;
+    width: 35%;
 }
 
 .pizzaImg,
 .deliveryImg,
 .enjoyImg{
-    height: 75%;
-    width: 100%;
+    height: 70%;
+    width: 95%;
 }
 
 .homeText1,
 .homeText2,
 .homeText3{
-    margin-top: -3%;
+    margin: 0;
     text-align: center;
     color: white;
-    padding: 0 5%;
+    padding: 0 3%;
+    word-break: break-word;
 }
 
 /*Menu Page*/
-
-.menu{
-
-}
-
-.menuMsg{
-    text-align: center;
-    color: white;
-    font-family: 'Indie Flower', cursive;
-    font-size: 3vh;
-}
 
 .pizzas{
     display: grid;
@@ -129,7 +121,7 @@ body{
 
 #pizza{
     text-align: center;
-    margin-top: 5%;
+    padding: 5%;
 }
 
 .pizzaName,
@@ -154,6 +146,23 @@ body{
     text-align:center;
     transition: all 0.15s;
     cursor: pointer;
+}
+
+/*About Page*/
+
+.aboutPage{
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 94%;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.aboutInfo{
+    width: 30%;
 }
 
 /*Footer*/
