@@ -13,7 +13,6 @@ const loadHome = () =>
         </div>
         <div class="homeScreen">
             <div class="homeCard1">
-<<<<<<< HEAD
                 <img class="pizzaImg" src="images/1pizza.png">
                 <p class="homeText1">1. Choose a delicious pizza from our diverse menu full with a lot of surpirses!</p>
             </div>
@@ -23,17 +22,6 @@ const loadHome = () =>
                 </div>
             <div class="homeCard3">
                 <img class="enjoyImg" src="images/3enjoy.png">
-=======
-                <img class="pizzaImg" src="images/11pizza.png">
-                <p class="homeText1">1. Choose a delicious pizza from our diverse menu full with a lot of surpirses!</p>
-            </div>
-            <div class="homeCard2">
-                <img class="deliveryImg" src="images/22delivery.png">
-                <p class="homeText2">2. We'll make sure to deliver your pizza warm and fresh within 30 minutes from the order!</p>
-                </div>
-            <div class="homeCard3">
-                <img class="enjoyImg" src="images/33enjoy.png">
->>>>>>> 430e92c34704af2e819ab0a142a8b1f6fe00aa79
                 <p class="homeText3">3. It's that simple! Enjoy our pizza which is made with passion and love!</p>
             </div>
         </div>
