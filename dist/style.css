@@ -1,5 +1,5 @@
 html{
-    background: url(../dist/images/pizza-background.jpg) no-repeat center center fixed;
+    background: url("images/pizza-background.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -151,6 +151,7 @@ body{
 /*About Page*/
 
 .aboutPage{
+    margin-top: 5%;
     color: white;
     font-family: 'Indie Flower', cursive;
     display: flex;
